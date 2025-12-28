@@ -27,7 +27,6 @@ void drawLineDDA(float x1, float y1, float x2, float y2)
     float x = x1;
     float y = y1;
 
-    // Draw the line
     glBegin(GL_POINTS);
     for (int i = 0; i <= steps; i++)
     {
@@ -42,15 +41,11 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
 
-    // Set point size for better visibility
     glPointSize(2.0);
-
-    // Set line color to white
     glColor3f(1.0, 1.0, 1.0);
 
     drawLineDDA(p1.x, p1.y, p2.x, p2.y);
 
-    // Draw endpoints for reference
     glPointSize(6.0);
     glColor3f(1.0, 0.0, 0.0); // Red color for start point
     glBegin(GL_POINTS);
@@ -67,7 +62,6 @@ void display()
 
 void init()
 {
-    // Set background color to black
     glClearColor(0.0, 0.0, 0.0, 1.0);
 
     glMatrixMode(GL_PROJECTION);

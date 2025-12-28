@@ -197,7 +197,7 @@ int main(int argc, char **argv)
     int choice;
     std::cin >> choice;
 
-    if (choice >= 1 && choice <= 5)
+    if (choice >= 1 && choice <= 2)
     {
         setPredefinedLine(choice);
         std::cout << "\nPredefined line set!" << std::endl;
