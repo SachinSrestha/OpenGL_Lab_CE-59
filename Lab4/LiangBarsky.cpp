@@ -92,7 +92,6 @@ bool liangBarskyClip(float &x1, float &y1, float &x2, float &y2)
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-
     // Draw clipping window in white
     glLineWidth(3.0f);
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -102,7 +101,6 @@ void display()
     glVertex2f(xMax, yMax);
     glVertex2f(xMin, yMax);
     glEnd();
-
     // Draw original lines in red (solid)
     glLineWidth(2.5f);
     glColor3f(1.0f, 0.3f, 0.3f);
@@ -113,7 +111,6 @@ void display()
         glVertex2f(line.p2.x, line.p2.y);
         glEnd();
     }
-
     // Draw clipped lines in green
     glColor3f(0.2f, 1.0f, 0.4f);
     glLineWidth(2.5f);
